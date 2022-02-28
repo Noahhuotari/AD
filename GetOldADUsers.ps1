@@ -36,6 +36,6 @@ $outputData = Get-ADUser -Filter {LastLogonTimeStamp -lt $time} -ResultPageSize 
 
 $output = $outputData | Select-Object Name,Enabled,SamAccountName,LastLogonDate,DistinguishedName
 
-$path = $folder+"\"+(Get-Date).tostring("dd-MM-yyyy-hh-mm-ss")+"_OldADusers.csv"
+$path = $folder+"\"+(Get-Date).tostring("dd-MM-yyyy-hh-mm-ss")+"_OldADusers.xlsx"
 
 $output | Export-Excel -path $path -AutoSize -TableName OldADusers -WorksheetName OldADusers
