@@ -21,8 +21,9 @@ if (Get-Module -ListAvailable -Name ImportExcel) {
     Import-Module ImportExcel
 } 
 else {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Install-Module ImportExcel
-	Import-Module ImportExcel
+    Import-Module ImportExcel
 }
 
 if (Test-Path -Path $Folder) {
