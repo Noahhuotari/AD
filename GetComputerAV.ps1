@@ -1,3 +1,15 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created on:   	10/24/2022
+	 Created by:    Noah Huotari
+	 Organization: 	HBS
+	 Filename:     	GetComputerAV.ps1
+	===========================================================================
+	.DESCRIPTION
+		Checks each computer in AD if the Antivirus service is running
+#>
+
 Import-Module ActiveDirectory
 $Computers = Get-ADComputer -filter *
 $Service = 'WRSVC'
