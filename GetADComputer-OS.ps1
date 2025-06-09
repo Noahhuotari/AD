@@ -2,7 +2,7 @@
 	.NOTES
 	===========================================================================
 	 Created on:   	11/17/2021
-  	 Updated on:	1/29/2024
+  	 Updated on:	6/9/2025
 	 Created by:    Noah Huotari
 	 Organization: 	HBS
 	 Filename:     	GetADComputer-OS.ps1
@@ -16,6 +16,7 @@
 	.ChangeLog
  	===========================================================================
  	1-29-2024 - Added Windows 11 23H2, updated Windows 10 export names
+    6-9-2025 - Added Windows 11 24H2
 #>
 
 $folder = "c:\hbs" 
@@ -50,6 +51,7 @@ foreach ($System in $List) {
             "10.0 (22000)" {"Win11 21H2"}
             "10.0 (22621)" {"Win11 22H2"}
             "10.0 (22631)" {"Win11 23H2"}
+            "10.0 (26100)" {"Win11 24H2"}
             "6.3 (9600)" {"Server 2012 R2"}
             "6.2 (9200)" {"Server 2012"}
             "6.1 (7601)" {"Server 2008 R2"}
