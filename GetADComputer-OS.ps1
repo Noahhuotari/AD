@@ -17,6 +17,7 @@
  	===========================================================================
  	1-29-2024 - Added Windows 11 23H2, updated Windows 10 export names
     6-9-2025 - Added Windows 11 24H2
+	5-20-2026 - Added Windows 11 25H2 & 26H1
 #>
 
 $folder = "c:\hbs" 
